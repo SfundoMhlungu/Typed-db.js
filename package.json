@@ -1,0 +1,9 @@
+{
+  "name": "typed-db.js",
+  "version": "1.0.0",
+  "description": "awume",
+  "main": "index.js",
+  "type": "module",
+  "author": "Sfundo(sk) Mhlungu",
+  "license": "ISC"
+}
