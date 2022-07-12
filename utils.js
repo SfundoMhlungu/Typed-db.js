@@ -24,6 +24,6 @@ export function isInDb(store, id){
 
 export const isStr = (val) => typeof val === "string"
 export const isNumb = (val) => typeof val === "number"
-export const isObj = (val) => typeof val === "object"
+export const isObj = (val) => typeof val === "object"  
 
 // npm publish --access public
