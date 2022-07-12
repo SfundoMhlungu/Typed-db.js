@@ -1,6 +1,6 @@
 import {isStr, isNumb, isObj} from "./utils.js"
 
-
+import fileHandler from "./FileHandler.js"
 
 
 
@@ -53,7 +53,8 @@ export default class Store{
 	 constructor(name, options){
 	  
          this.#meta.name = name;
-		     this.#meta.options = options
+		 this.#meta.options = options;
+		 this.fileH = new fileHandler(name)
 
 
 	  }
@@ -81,6 +82,8 @@ export default class Store{
 		}
 		this.#data[this.#meta.length] = data
 		this.#meta.length++
+		// console.dir(this.fileH)
+		;(async() => {this.fileH.write(`${data._id} :` + JSON.stringify(data) + "\n" )})()
 		// console.log('data', this.#data)
 	}
 	
