@@ -60,7 +60,7 @@ export default class Store{
 	  }
     
    get getData(){
-
+     this.fileH.read()
     return this.#data
    }
 
